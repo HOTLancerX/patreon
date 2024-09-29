@@ -71,7 +71,7 @@ const Home = () => {
                         className={`flex-none py-1.5 px-4 rounded-md ${activeButton === '1' ? 'bg-black text-white' : 'bg-gray-200'}`}
                         onClick={() => handleButtonClick('1')}
                     >
-                        Creators for you
+                        Recently visited
                     </button>
                     <button
                         className={`flex-none py-1.5 px-4 rounded-md ${activeButton === '2' ? 'bg-black text-white' : 'bg-gray-200'}`}
@@ -83,7 +83,7 @@ const Home = () => {
                         className={`flex-none py-1.5 px-4 rounded-md ${activeButton === '3' ? 'bg-black text-white' : 'bg-gray-200'}`}
                         onClick={() => handleButtonClick('3')}
                     >
-                        Popular this week
+                        Explore topics
                     </button>
                     <button
                         className={`flex-none py-1.5 px-4 rounded-md ${activeButton === '4' ? 'bg-black text-white' : 'bg-gray-200'}`}
@@ -103,14 +103,14 @@ const Home = () => {
             </div>
             <div id="1">
                 <Carousel
-                    title="Creators for you"
+                    title="Recently visited"
                     img=""
                     link="/"
                     left={0}
                     desktops={5}
                     tablets={3}
                     mobile={2}
-                    slider={1}
+                    slider={2}
                     limit={10}
                     items={[
                     {
@@ -253,75 +253,75 @@ const Home = () => {
             </div>
             <div id="3">
                 <Carousel
-                    title="Creators for you"
+                    title="Explore topics"
                     img=""
                     link="/"
                     left={0}
                     desktops={5}
                     tablets={3}
                     mobile={2}
-                    slider={1}
+                    slider={3}
                     limit={10}
                     items={[
                     {
-                        img: "/product/1.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Supply a Four",
-                        featured: "the patreon to the crossover podcast that no one asked for!",
+                        featured: "bg-gradient-to-t from-fuchsia-500 to-cyan-500",
                     },
                     {
-                        img: "/product/2.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "China Wholesale",
-                        featured: "the patreon to the crossover podcast that no one asked for!",
+                        featured: "bg-gradient-to-t from-blue-200 to-cyan-200",
                     },
                     {
-                        img: "/product/3.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Natural Bone",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-blue-600 to-violet-600",
                     },
                     {
-                        img: "/product/4.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Floral Blue",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-fuchsia-600 to-pink-600",
                     },
                     {
-                        img: "/product/5.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Xuchang Hair",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-purple-500 to-purple-900",
                     },
                     {
-                        img: "/product/6.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Straight Kinky",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-violet-600 to-indigo-600",
                     },
                     {
-                        img: "/product/7.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Wigs Full",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-emerald-500 to-emerald-900",
                     },
                     {
-                        img: "/product/8.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "8 Inch to",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-indigo-400 to-cyan-400",
                     },
                     {
-                        img: "/product/9.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Natural Raw",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-violet-200 to-pink-200",
                     },
                     {
-                        img: "/product/10.jpg",
+                        img: "/1.png",
                         link: "/1",
                         title: "Super Soft",
-                        featured: "the patreon to the crossover podcast that no one asked for",
+                        featured: "bg-gradient-to-t from-amber-500 to-pink-500",
                     },
                     ]}
                 />
