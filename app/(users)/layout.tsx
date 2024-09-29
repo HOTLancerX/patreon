@@ -52,13 +52,13 @@ export default function RootLayout({
               profile: [
                 {
                   img: "/user/1.jpg",
-                  name: "hera",
+                  name: "HeRa Khan",
                   sub: "member",
                 },
                 {
                   img: "/user/2.jpg",
-                  name: "zeus",
-                  sub: "admin",
+                  name: "Jay Ya Ji",
+                  sub: "Creator",
                 },
               ],
             }}
