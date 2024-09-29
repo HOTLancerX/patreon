@@ -41,7 +41,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items }) => {
   return (
     <>
       {/* Mobile Menu Button */}
-      <div className="md:hidden fixed top-2 left-2 z-50">
+      <div className="md:hidden fixed top-2 left-2 z-[9999]">
         <button
           onClick={() => setIsMobileSidebarOpen(!isMobileSidebarOpen)}
           className="bg-white p-2"
@@ -54,13 +54,13 @@ const Sidebar: React.FC<SidebarProps> = ({ items }) => {
 
       {/* Sidebar (hidden on mobile) */}
       <div
-        className={`h-full w-[260px] md:block ${
+        className={`fixed left-0 top-0 bottom-0 w-60 md:block ${
           isMobileSidebarOpen ? "block fixed w-60 left-0 top-0 bottom-0 z-[9999] bg-white" : "hidden"
         }`}
       >
-        <div className="flex flex-col h-full justify-between md:max-w-52 absolute top-0 bottom-0 left-0 right-0">
-            <div className="sticky top-0">
-                <div className="p-6 flex items-center justify-between">
+        <div className="flex flex-col h-full justify-between">
+            <div>
+                <div className="p-3 md:p-6 flex items-center justify-between">
                     {items.logo}
                     <button
                         onClick={() => setIsMobileSidebarOpen(false)}
@@ -92,7 +92,7 @@ const Sidebar: React.FC<SidebarProps> = ({ items }) => {
             </div>
 
             {/* Profile Section */}
-            <div className="md:fixed bottom-0 left-0 md:w-52">
+            <div>
                 <div
                     className="flex w-full items-center space-x-2 p-4 bg-gray-100 cursor-pointer"
                     onClick={() => setIsProfileOpen(!isProfileOpen)}
